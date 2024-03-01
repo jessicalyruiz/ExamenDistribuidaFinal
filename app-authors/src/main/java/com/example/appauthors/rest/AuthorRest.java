@@ -2,11 +2,12 @@ package com.example.appauthors.rest;
 import com.example.appauthors.db.Author;
 import com.example.appauthors.repo.IAuthorRepository;
 import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
-import javax.transaction.Transactional;
+
 import java.util.List;
 
 @Path("/authors")

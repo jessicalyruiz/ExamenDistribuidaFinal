@@ -6,15 +6,15 @@ import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
+import jakarta.transaction.Transactional;
 
 
-import javax.transaction.Transactional;
 import java.util.List;
 
 @ApplicationScoped
 @Transactional
 public class AuthorRepository implements IAuthorRepository{
-    @Inject
+    @PersistenceContext(unitName = "pu1")
     protected EntityManager entityManager;
 
     @Override

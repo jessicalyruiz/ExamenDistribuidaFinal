@@ -1,12 +1,15 @@
 package com.example.appbooks.db;
 
+import jakarta.persistence.*;
+import lombok.Data;
+
 import java.math.BigDecimal;
-/*
+
 @Entity
 @Data
-@Table(name = "books")*/
+@Table(name = "books")
 public class Book {
-   /* @Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
@@ -17,6 +20,6 @@ public class Book {
     @Column(name="author_id")
     private Integer authorId;
 
-*/
+
 
 }

@@ -1,0 +1,5 @@
+<Resource name="jdbc/myDataSource" auth="Container"
+          type="javax.sql.DataSource" driverClassName="org.postgresql.ds.PGSimpleDataSource"
+          url="jdbc:postgresql://dpg-cmossu7qd2ns738mohbg-a.oregon-postgres.render.com/distribuida_fjus"
+          username="distribuida" password="2ic23cPGGoEsc9OZb0v3GvwyUt36YJ5C"
+          maxTotal="20" maxIdle="10" maxWaitMillis="-1"/>
